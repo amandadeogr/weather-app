@@ -4,9 +4,45 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://kit.fontawesome.com/a2ddb5e7ab.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+
    <title>Weather Forecast App</title>
 </head>
 <body>
+   <main class="container">
+      <div class="container__input">
+         <input type="text" name="" id="input-city" placeholder="search...">
+      </div>
+      
+      <div class="container__image">
+         <img src="/assets/images/15.png" alt="" srcset="" id="weather-image">
+      </div>
+
+      <div class="container__temperature">
+         <h1 class="temperature">25<span class="temperature-unit">ºC</span></h1>
+      </div>
+
+      <div class="container__date-time">
+         <h3 class="date-time">Monday, 23:45</h6>
+      </div>
+
+      <div class="container__condition">
+         <div class="condition__umidity">
+            <i class="fa-solid fa-droplet-percent"><span class="umidity">48%</span></i>
+         </div>
+
+         <div class="condition__wind">
+            <i class="fa-duotone fa-wind"><span class="wind">3 km/h</span></i>
+         </div>
+      </div>
+
+      <div class="container__location">
+           <i class="fas fa-map-marker-alt"> <span id="location">location</span></i>
+       </div>
+      
+   </main>
    
 </body>
 </html>
