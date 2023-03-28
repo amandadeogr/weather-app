@@ -24,7 +24,7 @@
       </div>
 
       <div class="container__temperature">
-         <h1 class="temperature">25<span class="temperature-unit">ºC</span></h1>
+         <h1 class="temperature" id="temp">25<span class="temperature-unit">ºC</span></h1>
       </div>
 
       <div class="container__date-time">
@@ -33,16 +33,22 @@
 
       <div class="container__condition">
          <div class="condition__umidity">
-            <i class="fa-solid fa-droplet-percent"><span class="umidity">48%</span></i>
+            <i class="fa-solid fa-droplet-percent"></i>
+            <span class="humidity" id="humidity">48</span>
+            <span>%</span>
          </div>
 
          <div class="condition__wind">
-            <i class="fa-duotone fa-wind"><span class="wind">3 km/h</span></i>
+            <i class="fa-duotone fa-wind"></i>
+            <span class="wind" id="wind">3</span>
+            <span>km/h</span>
          </div>
       </div>
 
       <div class="container__location">
-           <i class="fas fa-map-marker-alt"> <span id="location">location</span></i>
+           <i class="fas fa-map-marker-alt"></i>
+           <span id="location">location</span>,
+           <span id="country">BR</span>
        </div>
       
    </main>
