@@ -9,3 +9,17 @@ const dataTimeElement = document.querySelector('#date-time');
 const weatherImageElement = document.querySelector('#weather-image');
 const umidityElement = document.querySelector('#umidity');
 const windElement = document.querySelector('#wind');
+
+// functions
+const showWeatherData = (city) => {
+   console.log(city);
+}
+
+//events
+btnSearch.addEventListener('click', (e) => {
+   e.preventDefault();
+
+   const city = inputCity.value;
+
+   showWeatherData(city);
+})
