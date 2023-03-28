@@ -4,10 +4,11 @@ const inputCity = document.querySelector('#input-city');
 const btnSearch = document.querySelector('#input-search');
 
 const cityElement = document.querySelector('#location');
+const countryElement = document.querySelector('#country')
 const tempElement = document.querySelector('#temp');
 const dataTimeElement = document.querySelector('#date-time');
 const weatherImageElement = document.querySelector('#weather-image');
-const umidityElement = document.querySelector('#umidity');
+const humidityElement = document.querySelector('#humidity');
 const windElement = document.querySelector('#wind');
 
 // functions
@@ -21,9 +22,15 @@ const getWeatherData = async(city) => {
    return data;
 }
 
-
 const showWeatherData = async (city) => {
    const data = await getWeatherData(city);
+
+   cityElement.innerText = data.name;
+   countryElement.innerText = data.sys.country;
+   tempElement.innerText = data.main.temp;
+   humidityElement.innerText = data.main.humidity;
+   windElement.innerText = data.wind.speed;
+
 }
 
 //events
