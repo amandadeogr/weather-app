@@ -18,15 +18,12 @@ const getWeatherData = async(city) => {
    const res = await fetch(apiWeatherURL);
    const data = await res.json();
 
-   console.log(data)
    return data;
 }
 
 const getWeatherCondition = async (city) => {
    const data = await getWeatherData(city);
    const dataWeather =  data.weather[0].main;
-
-   console.log(dataWeather)
 
    if(dataWeather == 'Clouds') {
       weatherImageElement.setAttribute("src", "./assets/images/clouds.png");
