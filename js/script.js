@@ -71,3 +71,12 @@ btnSearch.addEventListener('click', (e) => {
 
    showWeatherData(city);
 })
+
+inputCity.addEventListener('keyup', (e) => {
+   const key = e.which || e.keyCode;
+
+  if (key == 13) { 
+    const city = inputCity.value;
+    showWeatherData(city);
+  }
+})
