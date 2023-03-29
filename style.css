@@ -10,7 +10,8 @@
 }
 
 body {
-   background-image: url(/assets/images/pc.webp);
+   background-image: url(/assets/images/clear.jpg);
+   background-repeat: no-repeat;
 }
 
 .container {
