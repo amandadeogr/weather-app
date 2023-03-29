@@ -56,7 +56,7 @@ const showWeatherData = async (city) => {
    cityElement.innerText = data.name;
    descriptionElement.innerText = data.weather[0].description;
    countryElement.innerText = data.sys.country;
-   tempElement.innerText = data.main.temp;
+   tempElement.innerText = parseInt(data.main.temp);
    humidityElement.innerText = data.main.humidity;
    windElement.innerText = data.wind.speed;
 
