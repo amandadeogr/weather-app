@@ -2,6 +2,7 @@ const apiKey = "6d07a2e569fd15380570cc8e1e58a515";
 
 const inputCity = document.querySelector("#input-city");
 const btnSearch = document.querySelector("#input-search");
+const hiddenElements = document.querySelector("#weather-elements");
 
 const cityElement = document.querySelector("#location");
 const descriptionElement = document.querySelector("#description");
@@ -63,6 +64,7 @@ const main = async (city) => {
     alert("Sorry, this city was not found.");
   } else {
     showWeatherData(city);
+   hiddenElements.classList.add("d-block")
   }
 };
 
