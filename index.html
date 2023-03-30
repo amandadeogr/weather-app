@@ -11,48 +11,54 @@
    <title>Weather Forecast App</title>
 </head>
 <body>
+   <div id="error-message" class="error">
+      <p>Sorry, this city was not found.</p>
+   </div>
    <main class="container">
+      <h2 class="weather-title">Weather App</h2>
       <div class="container__input">
-         <input type="text" name="" id="input-city" placeholder="search...">
+         <input type="text" name="" id="input-city" placeholder="Search by city name...">
          <button type="submit" id="input-search" class="btn-search">
             <i class="fa-solid fa-magnifying-glass"></i>
          </button>
       </div>
       
-      <div class="container__image">
-         <img src="/assets/images/moon.png" alt="" srcset="" id="weather-image">
-      </div>
-
-      <div class="container__temperature">
-         <h1 class="temperature">
-            <span id="temp">25</span>
-            <span class="temperature-unit">ºC</span>
-         </h1>
-      </div>
-
-      <div class="container__description">
-         <h3 class="weather-description" id="description">Cloulds</h6>
-      </div>
-
-      <div class="container__condition">
-         <div class="condition__umidity">
-            <i class="fa-solid fa-droplet"></i>
-            <span class="humidity" id="humidity">48</span>
-            <span>%</span>
+      <div class="weather-elements" id="weather-elements">
+         <div class="container__image">
+            <img src="/assets/images/moon.png" alt="" srcset="" id="weather-image">
          </div>
-
-         <div class="condition__wind">
-            <i class="fa-solid fa-wind"></i>
-            <span class="wind" id="wind">3</span>
-            <span>km/h</span>
+   
+         <div class="container__temperature">
+            <h1 class="temperature">
+               <span id="temp">25</span>
+               <span class="temperature-unit">ºC</span>
+            </h1>
          </div>
+   
+         <div class="container__description">
+            <h3 class="weather-description" id="description">Cloulds</h6>
+         </div>
+   
+         <div class="container__condition">
+            <div class="condition__umidity">
+               <i class="fa-solid fa-droplet"></i>
+               <span class="humidity" id="humidity">48</span>
+               <span>%</span>
+            </div>
+   
+            <div class="condition__wind">
+               <i class="fa-solid fa-wind"></i>
+               <span class="wind" id="wind">3</span>
+               <span>km/h</span>
+            </div>
+         </div>
+   
+         <div class="container__location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="location">location</span>,
+              <span id="country">BR</span>
+          </div>
       </div>
-
-      <div class="container__location">
-           <i class="fas fa-map-marker-alt"></i>
-           <span id="location">location</span>,
-           <span id="country">BR</span>
-       </div>
       
    </main>
 
