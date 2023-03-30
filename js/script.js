@@ -3,6 +3,7 @@ const apiKey = "6d07a2e569fd15380570cc8e1e58a515";
 const inputCity = document.querySelector("#input-city");
 const btnSearch = document.querySelector("#input-search");
 const hiddenElements = document.querySelector("#weather-elements");
+const errorMessage = document.querySelector("#error-message");
 
 const cityElement = document.querySelector("#location");
 const descriptionElement = document.querySelector("#description");
@@ -61,7 +62,10 @@ const main = async (city) => {
   const data = await getWeatherData(city);
 
   if (data.cod === "404") {
-    alert("Sorry, this city was not found.");
+     errorMessage.classList.add("active")
+   setTimeout(()=> {
+      errorMessage.classList.remove("active")
+   }, 4000)
   } else {
     showWeatherData(city);
    hiddenElements.classList.add("d-block")

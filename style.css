@@ -14,13 +14,28 @@ body {
   background-repeat: no-repeat;
 }
 
+.error {
+   background-color: #ffff00ed;
+   border: 3px solid #ffff00ed;
+   border-radius: 5px;
+   display: none;
+   margin: 1rem auto;
+   padding: 1rem;
+   width: 30%;
+}
+
+.active {
+   display: block;
+   animation: fadeInAnimation ease-in-out 1s;
+}
+
 .weather-elements {
   display: none;
 }
 
 .d-block {
    display: block;
-   animation: moveToTop 1s ease-out;
+   animation: moveToTop .5s ease-out;
    animation-delay: .0s;
 }
 
@@ -99,6 +114,15 @@ img {
      transform: translateY(0px);
    }
  }
+
+ @keyframes fadeInAnimation {
+   0% {
+       opacity: 0.5;
+   }
+   100% {
+       opacity: 1;
+    }
+}
 
 @media (max-width: 550px) {
   .container {
