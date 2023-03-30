@@ -1,5 +1,4 @@
 # Weather App
-A Weather App constructed with JS Vanilla
 
 ## 🚀 Objetivo
 O objetivo desta aplicação é criar um sistema de consulta climática por cidade. Para isso, foi utilizado a API Open Weather Map e as tecnologias HTML5, CSS3 e JS Vanilla.
