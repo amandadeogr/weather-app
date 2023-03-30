@@ -18,8 +18,10 @@ O objetivo desta aplicação é criar um sistema de consulta climática por cida
 ### Clonando repositório
 No terminal, digite o comando:
 ```
-git clone 
+git clone https://github.com/amandadeogr/weather-app.git 
 ```
+
+ou baixe o arquivo zip do repositório, clicando no botão "Code" e na opção "Download Zip"
 
 ### Próximos passos
 Desenvolver um sistema de previsão do tempo mais completo, com algum framework javascript. O sistema apresentará sensação térmica, previsão de minimas e máximas temperaturas e hora local, para tornar as imagens ilustrativas mais dinâmicas e intuitivas. 
